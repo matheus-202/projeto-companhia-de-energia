@@ -1,3 +1,6 @@
-print("este programa irá pedir dados de login ")
-input("insira seu email ou CPF:")
-input("insira sua senha:")
+print("este programa irá pedir seus dados de login ")
+def login():
+    input("insira seu email:")
+    input("insira sua senha")
+login()
+  
