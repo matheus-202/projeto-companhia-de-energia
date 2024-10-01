@@ -7,8 +7,6 @@ usuarios = {
 }
 
 
-
-
 def login():
     print("Bem-vindo ao sistema de login!")
     
@@ -24,3 +22,8 @@ login()
 
 # Chama a função de login
 
+def login():
+    input("insira seu email:")
+    input("insira sua senha")
+login()
+  
