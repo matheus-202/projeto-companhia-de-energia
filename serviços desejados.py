@@ -2,7 +2,6 @@ def linhas():
     global linhas
     print('-' * 20)
     
-
 linhas()
 print(' Opções de serviços:')
 linhas()
@@ -12,8 +11,6 @@ opcao = print ('[1] - consulta da fatura\n[2] - Religação\n[3] - Falta de ener
 linhas()
 servico = int(input('Insira o múmero do serviço desejado: '))
 linhas()
-
-#def fatura():
 
 servico == 1
 print('Olá\nConsulte sua fatura aqui!')
@@ -36,7 +33,7 @@ def fatura():
 
     elif ser_fa == '3':
         print('Você consegue parcelar sua fatura em até 5x')
-        parcela = int(input('Insira em quantas parcelas você deseja: '))
+        parcela = float(input('Insira em quantas parcelas você deseja: '))
     
         match  parcela:
 
@@ -62,3 +59,10 @@ def fatura():
         print('Erro000000000000000000000000000000000000z\nTente novamente mais tarde!')
         
 fatura()
+
+servico == 2
+print('Olá\nPor qual motivo você deseja solicitar a religação?')
+
+def religacao():
+
+    print('[1] - Corte de energia\n[2] -  ')
