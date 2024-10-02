@@ -1,7 +1,7 @@
 print("este programa irá pedir seus dados de login ")
 # Dicionário de usuários e senhas
-usuarios = {
-    "guilherme": "mariane29",
+usuarios ={ 
+    "guilherme": "senha1234",
     "usuario2": "senha456",
     "usuario3": "senha789"
 }
@@ -12,12 +12,18 @@ def login():
     
     usuario = input("Digite seu usuário: ")
     senha = input("Digite sua senha: ")
+    verdadeiro = True
+   
     
     # Verifica se o usuário e a senha estão corretos
     if usuario in usuarios and usuarios[usuario] == senha:
         print("Login bem-sucedido! Bem-vindo,", usuario)
-    else:
-        print("Usuário ou senha incorretos. Tente novamente.")
+    if usuarios != senha:
+        print("incorreto")
+    if usuarios == verdadeiro:
+        print("correto")
+    
+    
 login()
 
 def linhas():
