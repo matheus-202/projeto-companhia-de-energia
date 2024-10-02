@@ -12,26 +12,26 @@ linhas()
 servico = int(input('Insira o múmero do serviço desejado: '))
 linhas()
 
-servico == 1
-print('Olá\nConsulte sua fatura aqui!')
+if servico == '1':
+    print('Olá\nConsulte sua fatura aqui!')
 
-def fatura():
+    def fatura():
 
-    print('O que você deseja?\n[1] - Valor da fatura\n[2] - retirar a 2° via da fatura\n[3] - Parcelamento da fatura')
-    linhas()
-    ser_fa = input('Qual serviço desejado?: ')
+     print('O que você deseja?\n[1] - Valor da fatura\n[2] - retirar a 2° via da fatura\n[3] - Parcelamento da fatura')
+     linhas()
+     ser_fa = input('Qual serviço desejado?: ')
 
-    import random
+     import random
 
-    valor_fatura = random.randint(50,1000)
+     valor_fatura = random.randint(50,1000)
 
-    if ser_fa == '1':
+     if ser_fa == '1':
         print('O valor da sua fatura é de',valor_fatura)
     
-    elif ser_fa == '2':
+     elif ser_fa == '2':
         print('Enviamos para você sua fatura por E-mail')
 
-    elif ser_fa == '3':
+     elif ser_fa == '3':
         print('Você consegue parcelar sua fatura em até 5x')
         parcela = float(input('Insira em quantas parcelas você deseja: '))
     
@@ -55,13 +55,13 @@ def fatura():
             case 5:
                  par_5 = valor_fatura/5
                  print('Você pagará em 5x de R$',par_5)
-    else :
+     else :
         print('Erro000000000000000000000000000000000000z\nTente novamente mais tarde!')
         
-fatura()
+    fatura()
 
-servico == 2
-print('Olá\nPor qual motivo você deseja solicitar a religação?')
+elif servico == '2':
+    print('Olá\nPor qual motivo você deseja solicitar a religação?')
 
 def religacao():
 
