@@ -63,6 +63,6 @@ if servico == '1':
 elif servico == '2':
     print('Olá\nPor qual motivo você deseja solicitar a religação?')
 
-def religacao():
+    def religacao():
 
-    print('[1] - Corte de energia\n[2] -  ')
+        print('[1] - Corte de energia\n[2] -  ')
