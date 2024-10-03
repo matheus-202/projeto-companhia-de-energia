@@ -7,12 +7,12 @@ print("este programa irá pedir seus dados de login ")
 
 
 def login():
-    usuario = input("Digite seu usuário: ")
+    cadastro_de_usuario = input("Digite seu usuário: ")
     senha = input("Digite sua senha: ")
 
-    if usuario not in usuarios:
+    if cadastro_de_usuario not in usuarios:
         print("Usuário não encontrado.")
-    elif usuarios[usuario] != senha:
+    elif usuarios[cadastro_de_usuario] != senha:
         print("Senha incorreta.")
     else:
         print("Login bem-sucedido!")
@@ -30,7 +30,7 @@ def cadastro():
     
     
  
-cadastro_de_usu = input("Digite seu nome: ")
+cadastro_de_usuario = input("Digite seu nome: ")
 senha = input("Digite sua data de nascimento: ")
 cadastro = {
     'e-mail': 'senha123',
