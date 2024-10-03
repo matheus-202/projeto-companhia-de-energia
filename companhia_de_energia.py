@@ -1,7 +1,12 @@
 print("este programa irá pedir seus dados de login ")
 # Dicionário de usuários e senhas
 
+usuarios = {
+    'guilherme': 'senha123',
+    'joao': 'senha456',
+    'flavia': 'senha789',
 
+}
     
 
 
@@ -10,33 +15,15 @@ def login():
     cadastro_de_usuario = input("Digite seu usuário: ")
     senha = input("Digite sua senha: ")
 
-    if cadastro_de_usuario not in usuarios:
+    if cadastro_de_usuario not in usuarios.keys():
         print("Usuário não encontrado.")
+        login()
     elif usuarios[cadastro_de_usuario] != senha:
         print("Senha incorreta.")
+        login()
     else:
         print("Login bem-sucedido!")
 login()
-
-print("vamos confirmar se encontraremos seu login")
-usuarios = {
-    'e-mail': 'senha123',
-    'e-mail': 'senha456',
-    'e-mail': 'senha789',
-}
-
-
-def cadastro():
-    
-    
- 
-cadastro_de_usuario = input("Digite seu nome: ")
-senha = input("Digite sua data de nascimento: ")
-cadastro = {
-    'e-mail': 'senha123',
-    'e-mail': 'senha456',
-    'e-mail': 'senha789',
-}
 
 
 def linhas():
