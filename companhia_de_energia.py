@@ -2,19 +2,9 @@ print("este programa irá pedir seus dados de login ")
 # Dicionário de usuários e senhas
 
 
-
-def login():
-    print("Bem-vindo ao sistema de login!")
     
-usuario = input("Digite seu usuário: ")
-senha = input("Digite sua senha: ")
 
-   
-usuarios = {
-    'usuario1': 'senha123',
-    'usuario2': 'senha456',
-    'usuario3': 'senha789',
-}
+
 
 def login():
     usuario = input("Digite seu usuário: ")
@@ -26,9 +16,32 @@ def login():
         print("Senha incorreta.")
     else:
         print("Login bem-sucedido!")
-
 login()
 
+print("vamos confirmar se encontraremos seu login")
+usuarios = {
+    'e-mail': 'senha123',
+    'e-mail': 'senha456',
+    'e-mail': 'senha789',
+}
+
+
+def cadastro():
+    
+    
+ 
+cadastro_de_usu = input("Digite seu nome: ")
+senha = input("Digite sua data de nascimento: ")
+cadastro = {
+    'e-mail': 'senha123',
+    'e-mail': 'senha456',
+    'e-mail': 'senha789',
+}
+
+
+def linhas():
+    global linhas
+    print('-' * 20)
     
 
 linhas()
