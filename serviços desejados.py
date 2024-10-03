@@ -2,7 +2,6 @@ def linhas():
     global linhas
     print('-' * 20)
     
-
 linhas()
 print(' Opções de serviços:')
 linhas()
@@ -17,13 +16,14 @@ if servico == '1':
     print('Olá\nConsulte sua fatura aqui!')
 
     def fatura():
-
-     print('O que você deseja?\n[1] - Valor da fatura\n[2] - retirar a 2° via da fatura\n[3] - Parcelamento da fatura')
-    linhas()
+        print('O que você deseja?\n[1] - Valor da fatura\n[2] - retirar a 2° via da fatura\n[3] - Parcelamento da fatura')
+        linhas()
     ser_fa = input('Qual serviço desejado?: ')
+    
 
     import random
 
+     
     valor_fatura = random.randint(50,1000)
 
     if ser_fa == '1':
@@ -32,9 +32,9 @@ if servico == '1':
     elif ser_fa == '2':
         print('Enviamos para você sua fatura por E-mail')
 
-    elif ser_fa =='3':
+    elif ser_fa == '3':
         print('Você consegue parcelar sua fatura em até 5x')
-        parcela = int(input('Insira em quantas parcelas você deseja: '))
+        parcela = float(input('Insira em quantas parcelas você deseja: '))
     
         match  parcela:
 
@@ -59,21 +59,4 @@ if servico == '1':
     else :
         print('Erro000000000000000000000000000000000000z\nTente novamente mais tarde!')
         
-elif servico == '2':
-
-    linhas()
-    print('Olá\nPor qual motivo você deseja solicitar a religação?')
-    linhas()
-
-    def religacao():
-
-     print('[1] - Corte de energia\n[2] - URGÊNCIA\n[3] - Falta de energia ')
-
-     if religacao == '1':
-         print('Sua energia foi cortada devido o vencimento da fatura\nCom a quitação da dívida iremos realizar o religamento da sua enrgia')
-         linhas()
-         input('[1] - ')
-         
-         match religacao:
-             
-             case '1':
+fatura()
