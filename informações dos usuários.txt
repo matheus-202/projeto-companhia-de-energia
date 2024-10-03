@@ -1,6 +1,14 @@
 nome: Matheus da silva
+<<<<<<< HEAD
+Data de nascimento: 06/04/2008
+E-mail: matheussilvafrancisco512@gmail.com
+Senha: matheus134
+CPF: 058.144.650-80
+Endereço: Rua duque de caxias,570, formosa , 12894-190 , UC 160
+=======
 nome:Guilherme bohrer Blondé
 
+>>>>>>> 9a5fd7ceac9edb467a3b6a61311555ba2a722d94
 
 Nome: Ana Silva
 Data de Nascimento: 15/03/1990
