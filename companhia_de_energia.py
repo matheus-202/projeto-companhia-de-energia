@@ -8,10 +8,6 @@ usuarios = {
 
 }
 
-    
-
-
-
 def login():
     input("insira seu email ou CPF: ")
     input("insira sua senha: ")
@@ -119,4 +115,3 @@ religacao()
 print('Erro000000000000000000000000000000000000z\nTente novamente mais tarde!')
         
 fatura()
-  
