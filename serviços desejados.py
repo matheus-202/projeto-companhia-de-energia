@@ -25,6 +25,26 @@ def login():
         print("Login bem-sucedido!")
 login()
 
+cadastrar ={
+    'Nome: Ana Silva',
+    'Data de Nascimento: 15/03/1990,'
+    'E-mail: ana.silva@email.com',
+    'Senha: senha123',
+    'CPF: 123.456.789-00',
+    'Endereço: Rua das Flores, 123, Centro, 12345-678, UC1',
+}
+def cadastrar():
+Nome = input("Digite seu usuário: ")
+
+Data_de_nascimento =input(" ")
+
+CPF =input(" ")
+
+Endereço_completo =input(" ")
+
+
+
+
 def linhas():
     global linhas
     print('-' * 20)
