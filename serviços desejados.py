@@ -8,8 +8,9 @@ linhas()
 
 opcao = print ('[1] - consulta da fatura\n[2] - Religação\n[3] - Troca de título\n[4] - Nova ligação\n[5] - Número para contato')
 
+
 linhas()
-servico = int(input('Insira o múmero do serviço desejado: '))
+servico = input('Insira o múmero do serviço desejado: ')
 linhas()
 
 if servico == '1':
@@ -18,6 +19,10 @@ if servico == '1':
     def fatura():
         print('O que você deseja?\n[1] - Valor da fatura\n[2] - retirar a 2° via da fatura\n[3] - Parcelamento da fatura')
         linhas()
+    ser_fa = input('Qual serviço desejado?: ')
+    
+    print('O que você deseja?\n[1] - Valor da fatura\n[2] - retirar a 2° via da fatura\n[3] - Parcelamento da fatura')
+    linhas()
     ser_fa = input('Qual serviço desejado?: ')
     
 
@@ -56,7 +61,22 @@ if servico == '1':
             case '5':
                  par_5 = valor_fatura/5
                  print('Você pagará em 5x de R$',par_5)
+    
     else :
         print('Erro000000000000000000000000000000000000z\nTente novamente mais tarde!')
+        
+elif servico == '2':
+
+    linhas()
+    print('Olá\nPor qual motivo você deseja solicitar a religação?')
+    linhas()
+
+    input('[1] - Corte de energia\n[2] - URGÊNCIA\n[3] - Falta de energia \nInsira a opção desjada: ')
+
+ 
+religacao()
+
+
+print('Erro000000000000000000000000000000000000z\nTente novamente mais tarde!')
         
 fatura()

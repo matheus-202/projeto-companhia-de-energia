@@ -7,12 +7,13 @@ usuarios = {
     'flavia': 'senha789',
 
 }
+
     
 
 
 
 def login():
-    input("insira seu email: ")
+    input("insira seu email ou CPF: ")
     input("insira sua senha: ")
 
 login()
