@@ -12,7 +12,26 @@ opcao = print ('[1] - consulta da fatura\n[2] - Religação\n[3] - Troca de tít
 linhas()
 servico = input('Insira o múmero do serviço desejado: ')
 linhas()
+def religacao():
 
+    if religacao == '1':
+        print('Sua energia foi cortada devido o vencimento da fatura\nCom a quitação da dívida iremos realizar o religamento da sua enrgia')
+        linhas()
+        input('Você já realizou o pagamento de sua dívida\n[1] - Sim  [2] - Não\nInsira sua resposta: ')
+        
+        match religacao:
+            
+            case '1':
+                input('insira o número do protocolo: ' ) 
+                if servico == religacao: 
+                    print('Enviaremos uma equipe para fazer o religamento da sua energia\nTe peço que você pague em dia suas contas, muito obrigado!')
+                elif servico!= religacao:
+                    print('Erro, reinicie o programa')
+                else:
+                    print('ERRRRRROOOOOOOOOOOOOOOOOOOOOUUUUUUUUUUUUUUUUU')
+
+            case '2':
+                print('Reinicie o programa e selecione a opção [1] - consulte sua fatura')
 if servico == '1':
     print('Olá\nConsulte sua fatura aqui!')
 
