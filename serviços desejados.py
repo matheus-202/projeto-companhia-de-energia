@@ -78,7 +78,7 @@ elif servico == '2':
              
              case '1':
                  input('insira o número do protocolo: ' ) 
-                 if protocolo == protocolo: 
+                 if servico == religacao: 
                      print('Enviaremos uma equipe para fazer o religamento da sua energia\nTe peço que você pague em dia suas contas, muito obrigado!')
                  elif servico!= religacao:
                      print('Erro, reinicie o programa')
