@@ -20,6 +20,7 @@ def linhas():
     global linhas
     print('-' * 20)
     
+
 def titulo():
 
     linhas()
@@ -57,11 +58,17 @@ while True:
 
     def fatura():
 
+
      linhas()
+    print('O que você deseja?\n[1] - Valor da fatura\n[2] - retirar a 2° via da fatura\n[3] - Parcelamento da fatura')
+    linhas()
+
     ser_fa = input('Qual serviço desejado?: ')
+    
 
     import random
 
+     
     valor_fatura = random.randint(50,1000)
 
     if ser_fa == '1':
@@ -70,7 +77,7 @@ while True:
     elif ser_fa == '2':
         print('Enviamos para você sua fatura por E-mail')
 
-    elif ser_fa =='3':
+    elif ser_fa == '3':
         print('Você consegue parcelar sua fatura em até 5x')
         parcela = float(input('Insira em quantas parcelas você deseja: '))
     
@@ -106,7 +113,7 @@ while True:
                  linhas()
 
     else :
-        print('Erro00000000000000\nTente novamente mais tarde!')
+      print('Erro00000000000000\nTente novamente mais tarde!')
 
 
  elif servico == 2:
@@ -122,3 +129,4 @@ while True:
  elif servico == 3: 
     titulo()
     
+    print
