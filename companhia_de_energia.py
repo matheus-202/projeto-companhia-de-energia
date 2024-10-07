@@ -12,7 +12,8 @@ usuarios = {
 
 
 def login():
-    input("insira seu email:")
-    input("insira sua senha")
+    input("insira seu email: ")
+    input("insira sua senha: ")
+
 login()
   
