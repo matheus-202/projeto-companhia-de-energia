@@ -1,17 +1,43 @@
+import os
+
+
 print("este programa irá pedir seus dados de login ")
 # Dicionário de usuários e senhas
 
 usuarios = {
-    'guilherme': 'senha123',
+    'guilherme': 'ronald',
     'joao': 'senha456',
     'flavia': 'senha789',
 
 }
+senhas= {
+    'senha123':'senha456',
+    'senha321':'senha789',
+    
+}
+def logar():
+    senha = input("insira sua senha: ")
+    logar(senha)
+logar()    
 def login():
-    input("insira seu email ou CPF: ")
-    input("insira sua senha: ")
+    nome = input("insira seu email ou CPF: ")
+    
+    login(nome)
+    
+    
+login()    
 
-login()
+    
+   
+def verificar(nome,senha):   
+    for nome in senha  in usuarios:
+        print("correto,continue")
+    for nome in senha in usuarios:
+        print("incorreto,digite novamente")
+
+verificar(nome,senha)
+   
+
 
 def linhas():
     global linhas
@@ -47,8 +73,8 @@ def religacao():
 
             case '2':
                 print('Reinicie o programa e selecione a opção [1] - consulte sua fatura')
-if servico == '1':
-    print('Olá\nConsulte sua fatura aqui!')
+    if servico == '1':
+        print('Olá\nConsulte sua fatura aqui!')
 
     def fatura():
         print('O que você deseja?\n[1] - Valor da fatura\n[2] - retirar a 2° via da fatura\n[3] - Parcelamento da fatura')
@@ -58,6 +84,8 @@ if servico == '1':
     print('O que você deseja?\n[1] - Valor da fatura\n[2] - retirar a 2° via da fatura\n[3] - Parcelamento da fatura')
     linhas()
     ser_fa = input('Qual serviço desejado?: ')
+    fatura()
+    
     
 
     import random
@@ -96,22 +124,40 @@ if servico == '1':
                  par_5 = valor_fatura/5
                  print('Você pagará em 5x de R$',par_5)
     
-    else :
+    else:
         print('Erro000000000000000000000000000000000000z\nTente novamente mais tarde!')
         
-elif servico == '2':
+    if servico == '2':
 
-    linhas()
+        linhas()
     print('Olá\nPor qual motivo você deseja solicitar a religação?')
     linhas()
 
     input('[1] - Corte de energia\n[2] - URGÊNCIA\n[3] - Falta de energia \nInsira a opção desjada: ')
 
  
-religacao()
+    religacao()
 
 
 print('Erro000000000000000000000000000000000000z\nTente novamente mais tarde!')
         
-fatura()
+
+# case: '1' #para criar uma turma
+# print("Criando turma...")
+
+# turma = input("Qual turma você deseja criar?\n")
+
+# pasta_turmas = "turma"
+
+# if not  os.path.exists(pasta_turmas):
+#     os.makedirs(pasta_turmas)
+    
+# arquivo_txt =os.path.join(turma + ".txt")
+
+# if  os.path.exists(arquivo_txt):
+#     print("Esta turma já existe")
+# else:
+    
+#     with open (pasta_turmas + '/' + arquivo_txt , 'w', encoding='utf-8') as arquivo:
+#         print(f"turma {turma} criada.") #cria a turma caso exista
   
