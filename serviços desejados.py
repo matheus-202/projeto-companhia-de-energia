@@ -1,25 +1,43 @@
-def ligacao(liga_p):
+def informacoes(**kwargs):
+    global informacoes
+    linhas()
+    endereco = input('Insira o endereço\nDigite a rua:\n')
+    linhas()
+    num = input('Insira o número da residência:\n')
+    linhas()
+    bairo = input('Digite o baiiro:\n')
+    linhas()
+    cep = input('Insira seu CEP:\n')
+    linhas()
+    return informacoes (endereco,num,bairo,cep)
+ 
+def religacao(liga_p):
 
-    if liga_p == "1":
+    liga_p = input('[1] - Corte de energia\n[2] - URGÊNCIA\n[3] - Falta de energia\nInsira a opção desejada: ')
+
+    if liga_p == '1':
         print('Sua energia foi cortada devido o vencimento da fatura\nCom a quitação da dívida iremos realizar o religamento da sua enrgia')
         linhas()
         print('Reinicie o programa e insira a opção consulta da fatura')
 
-
-    elif liga_p == "2":
+    elif liga_p == '2':
         linhas()
         input('Insira a sua emergência:\n')
         linhas()
         print('Enviaremos uma equipe para a sua residência')
 
-    elif liga_p == "3":
+    elif liga_p == '3':
         input('Insira o motivo da falta de energia:\n')
-        print('Enviaremos uma equipe para a sua residência') 
+        print('Enviaremos uma equipe para a sua residência')
+        
+    else:
+        print('Erro!')
+
 
 def linhas():
     global linhas
-    print('-' * 20)
-    
+    print('-' * 20) 
+
 
 def titulo():
 
@@ -32,13 +50,27 @@ def titulo():
 
     rua = input ('insira a rua:\n')
     linhas()
-    num = input ('insira o número da residência:\n')
+    num = int(input ('insira o número da residência:\n'))
     linhas()
     bar = input ('Insira o bairro:\n')
     linhas()
-    print('A troca de título para o endereço\n',rua,num,bar,'\nserá realizada em 2 à 3 dias\nMuito obrigado!')
+    cep = input ('Insira o CEP:\n')
+    linhas()
+    print('A troca de título para o endereço\n',rua,num,bar,cep,'\nserá realizada em 2 à 3 dias\nMuito obrigado!')
 
+
+def ligacao():
     
+    linhas()
+    print('Olá, você deseja realizar uma nova ligação em um novo endereço\nInsira as informaçôes necessárias para realizarmos este procedimento')
+    linhas()
+
+    informacoes()
+    linhas()
+    print('Iremos realizar uma nova ligação no endereço\n{endereco} {num},{bairro}\nEntre 2 à 4 dias,com uma taxa de R$200,00 na próxima fatura\nMuito obrigado!')
+    linhas()
+
+
 while True:
 
  linhas()
@@ -54,17 +86,14 @@ while True:
  if servico == 1:
     print('Olá\nConsulte sua fatura aqui!')
 
-    print('O que você deseja?\n[1] - Valor da fatura\n[2] - retirar a 2° via da fatura\n[3] - Parcelamento da fatura')
-
     def fatura():
-
 
      linhas()
     print('O que você deseja?\n[1] - Valor da fatura\n[2] - retirar a 2° via da fatura\n[3] - Parcelamento da fatura')
     linhas()
 
     ser_fa = input('Qual serviço desejado?: ')
-    
+    linhas()
 
     import random
 
@@ -122,11 +151,21 @@ while True:
     print('Olá\nPor qual motivo você deseja solicitar a religação?')
     linhas()
        
-    liga = input('[1] - Corte de energia\n[2] - URGÊNCIA\n[3] - Falta de energia\nInsira a opção desejada: ')
+   # liga = input('[1] - Corte de energia\n[2] - URGÊNCIA\n[3] - Falta de energia\nInsira a opção desejada: ')
     linhas()
-    ligacao(liga)
+    religacao('liga_p')
 
  elif servico == 3: 
     titulo()
     
-    print
+ elif servico == 4:
+     ligacao()
+
+ elif servico == 5:
+     
+     linhas()
+     print('Olá, fale conosco através deste número\n 0800-123-456')
+     linhas()
+
+ else:
+     print('Opção inválida\nTente novamente.')
