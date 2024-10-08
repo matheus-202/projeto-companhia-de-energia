@@ -1,39 +1,3 @@
-def informacoes(**kwargs):
-    global informacoes
-    linhas()
-    endereco = input('Insira o endereço\nDigite a rua:\n')
-    linhas()
-    num = input('Insira o número da residência:\n')
-    linhas()
-    bairo = input('Digite o baiiro:\n')
-    linhas()
-    cep = input('Insira seu CEP:\n')
-    linhas()
-    return informacoes (endereco,num,bairo,cep)
- 
-def religacao(liga_p):
-
-    liga_p = input('[1] - Corte de energia\n[2] - URGÊNCIA\n[3] - Falta de energia\nInsira a opção desejada: ')
-
-    if liga_p == '1':
-        print('Sua energia foi cortada devido o vencimento da fatura\nCom a quitação da dívida iremos realizar o religamento da sua enrgia')
-        linhas()
-        print('Reinicie o programa e insira a opção consulta da fatura')
-
-    elif liga_p == '2':
-        linhas()
-        input('Insira a sua emergência:\n')
-        linhas()
-        print('Enviaremos uma equipe para a sua residência')
-
-    elif liga_p == '3':
-        input('Insira o motivo da falta de energia:\n')
-        print('Enviaremos uma equipe para a sua residência')
-        
-    else:
-        print('Erro!')
-
-
 def linhas():
     global linhas
     print('-' * 20) 
@@ -77,13 +41,13 @@ while True:
  print(' Opções de serviços:')
  linhas()
 
- opcao = print ('[1] - consulta da fatura\n[2] - Religação\n[3] - Troca de título\n[4] - Nova ligação\n[5] - Número para contato')
+opcao = print ('[1] - consulta da fatura\n[2] - Religação\n[3] - Troca de título\n[4] - Nova ligação\n[5] - Número para contato')
 
- linhas()
- servico = int(input('Insira o múmero do serviço desejado: '))
- linhas()
+linhas()
+servico = int(input('Insira o múmero do serviço desejado: '))
+linhas()
 
- if servico == 1:
+if servico == '1':
     print('Olá\nConsulte sua fatura aqui!')
 
     def fatura():
@@ -93,7 +57,7 @@ while True:
     linhas()
 
     ser_fa = input('Qual serviço desejado?: ')
-    linhas()
+    
 
     import random
 
@@ -139,33 +103,7 @@ while True:
                  par_5 = valor_fatura/5
                  linhas()
                  print('Você pagará em 5x de R$',par_5)
-                 linhas()
-
     else :
-      print('Erro00000000000000\nTente novamente mais tarde!')
-
-
- elif servico == 2:
-
-    linhas()
-    print('Olá\nPor qual motivo você deseja solicitar a religação?')
-    linhas()
-       
-   # liga = input('[1] - Corte de energia\n[2] - URGÊNCIA\n[3] - Falta de energia\nInsira a opção desejada: ')
-    linhas()
-    religacao('liga_p')
-
- elif servico == 3: 
-    titulo()
-    
- elif servico == 4:
-     ligacao()
-
- elif servico == 5:
-     
-     linhas()
-     print('Olá, fale conosco através deste número\n 0800-123-456')
-     linhas()
-
- else:
-     print('Opção inválida\nTente novamente.')
+        print('Erro000000000000000000000000000000000000z\nTente novamente mais tarde!')
+        
+fatura()
