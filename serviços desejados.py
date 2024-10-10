@@ -50,6 +50,7 @@ def religacao():
 
             case '2':
                 print('Reinicie o programa e selecione a opção [1] - consulte sua fatura')
+                
 if servico == '1':
     print('Olá\nConsulte sua fatura aqui!')
 
