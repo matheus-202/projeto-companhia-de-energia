@@ -92,7 +92,6 @@ def reinicio():
     elif reini_1 =='2':
         print('Espero ter conseguido te ajudar, muito obrigado!')
         
-        
     else:
         print('Errouuuu')
 
