@@ -1,42 +1,6 @@
-import os
 
 
-print("este programa irá pedir seus dados de login ")
-# Dicionário de usuários e senhas
 
-usuarios = {
-    'guilherme': 'ronald',
-    'joao': 'senha456',
-    'flavia': 'senha789',
-
-}
-senhas= {
-    'senha123':'senha456',
-    'senha321':'senha789',
-    
-}
-def logar():
-    senha = input("insira sua senha: ")
-    logar(senha)
-logar()    
-def login():
-    nome = input("insira seu email ou CPF: ")
-    
-    login(nome)
-    
-    
-login()    
-
-    
-   
-def verificar(nome,senha):   
-    for nome in senha  in usuarios:
-        print("correto,continue")
-    for nome in senha in usuarios:
-        print("incorreto,digite novamente")
-
-verificar(nome,senha)
-   
 
 
 def linhas():
@@ -142,22 +106,3 @@ def religacao():
 print('Erro000000000000000000000000000000000000z\nTente novamente mais tarde!')
         
 
-# case: '1' #para criar uma turma
-# print("Criando turma...")
-
-# turma = input("Qual turma você deseja criar?\n")
-
-# pasta_turmas = "turma"
-
-# if not  os.path.exists(pasta_turmas):
-#     os.makedirs(pasta_turmas)
-    
-# arquivo_txt =os.path.join(turma + ".txt")
-
-# if  os.path.exists(arquivo_txt):
-#     print("Esta turma já existe")
-# else:
-    
-#     with open (pasta_turmas + '/' + arquivo_txt , 'w', encoding='utf-8') as arquivo:
-#         print(f"turma {turma} criada.") #cria a turma caso exista
-  
