@@ -1,5 +1,5 @@
 def informacoes(**kwargs):
-    global informacoes
+   
     linhas()
     endereco = input('Insira o endereço\nDigite a rua:\n')
     linhas()
@@ -64,9 +64,18 @@ def ligacao():
     print('Olá, você deseja realizar uma nova ligação em um novo endereço\nInsira as informaçôes necessárias para realizarmos este procedimento')
     linhas()
 
-    informacoes()
     linhas()
-    print('Iremos realizar uma nova ligação no endereço\n{endereco} {num},{bairro}\nEntre 2 à 4 dias,com uma taxa de R$200,00 na próxima fatura\nMuito obrigado!')
+    endereco = input('Insira o endereço\nDigite a rua:\n')
+    linhas()
+    num = input('Insira o número da residência:\n')
+    linhas()
+    bairo = input('Digite o baiiro:\n')
+    linhas()
+    cep = input('Insira seu CEP:\n')
+    linhas()
+
+    linhas()
+    print('Iremos realizar uma nova ligação neste endereço\nEntre 2 à 4 dias,com uma taxa de R$200,00 na próxima fatura\nMuito obrigado!')
     linhas()
 
 def reinicio():
